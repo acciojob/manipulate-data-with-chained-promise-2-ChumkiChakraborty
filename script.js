@@ -1,6 +1,4 @@
-//your JS code here. If required.
-// Function that returns a promise resolving with an array after 3 seconds
-        function getNumbers() {
+  function getNumbers() {
             return new Promise((resolve) => {
                 setTimeout(() => {
                     resolve([1, 2, 3, 4]);
@@ -34,4 +32,4 @@
         getNumbers()
             .then(filterEvenNumbers) // First filter even numbers
             .then(multiplyEvenNumbers) // Then multiply the even numbers by 2
-            .catch(error => console.error("Error:", error)); // Handle errors if any
+            .catch(error => console.error("Error:", error)); 
